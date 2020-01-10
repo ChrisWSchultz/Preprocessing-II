@@ -246,6 +246,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination p {
+  text-align: justify;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 4% 8%;
+  text-align: center;
+}
 .home .header .img-header {
   margin-bottom: 30px;
 }
