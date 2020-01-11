@@ -9,16 +9,29 @@
     align-items: center;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     nav {
       width: 40%;
       display: flex;
       justify-content: space-between;
+
+      @media @mobile {
+        width: 100%;
+        justify-content: space-around;
+      }
 
       a {
         font-size: 1.8rem;
         text-decoration: none;
         color: @font-color;
         margin-left: 4%;
+
+        @media @mobile {
+          margin: 0;
+        }
 
         &:hover {
 

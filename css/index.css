@@ -178,16 +178,32 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .nav .nav-container {
+    flex-direction: column;
+  }
+}
 .nav .nav-container nav {
   width: 40%;
   display: flex;
   justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .nav .nav-container nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .nav .nav-container nav a {
   font-size: 1.8rem;
   text-decoration: none;
   color: #212529;
   margin-left: 4%;
+}
+@media ( max-width: 500px ) {
+  .nav .nav-container nav a {
+    margin: 0;
+  }
 }
 .footer {
   width: 100%;
@@ -206,13 +222,32 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 1%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 1%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -220,6 +255,11 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -242,9 +282,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination p {
   text-align: justify;
@@ -256,6 +307,12 @@ img {
   border-radius: 10px;
   padding: 4% 8%;
   text-align: center;
+}
+@media ( max-width: 500px ) {
+  .home .header h2,
+  .home .header p {
+    margin: 0 30px;
+  }
 }
 .home .header .img-header {
   margin-bottom: 30px;
